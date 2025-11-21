@@ -1,8 +1,8 @@
 # 💻 Projetos de Sistemas baseados em Aprendizado de Máquina 
 
-### Componentes
-- Paula Souza
-- Ítalo Maciel
+### 🏃 Componentes
+1. Paula Souza
+2. Ítalo Maciel
 
 ### ✏️ Descrição
 
