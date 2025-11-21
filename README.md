@@ -1,6 +1,5 @@
 # 💻 Projetos de Sistemas baseados em Aprendizado de Máquina 
-## Projeto 2: Visualizing CNN Layers: A Case Study
-
+## Projeto 2: Visualização das Camadas da CNN: Um Estudo de Caso+
 ### 🏃 Componentes
 1. Paula Souza
 2. Ítalo Maciel
