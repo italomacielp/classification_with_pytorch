@@ -12,8 +12,8 @@
 
 | Item | Descrição | Status |
 |------|--------------|--------|
-| Dataset | Escolher um dataset do torchvision.datasets | ☐ |
-| Arquitetura | Manter a arquitetura-base (LeNet-like) como visto em aula, adaptando apenas in_channels se necessário. | ☐ |
+| Dataset | Escolher um dataset do torchvision.datasets | ✅ |
+| Arquitetura | Manter a arquitetura-base (LeNet-like) como visto em aula, adaptando apenas in_channels se necessário. | ✅|
 | Loss Functions/Métricas | Treinar o modelo e registrar métricas de loss e accuracy (treino/val) | ☐ |
 | Hooks | Implementar Hooks para capturar ativações intermediárias.
 | Visualização | Visualizar os feature maps de todas camadas. | ☐ |
