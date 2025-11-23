@@ -14,16 +14,20 @@
 ### 📌 Descrição do projeto
 <p align="justify">
 O Trabalho da Unidade 02 é um Estudo de Caso que visa a Visualização das Camadas da CNN (Rede Neural Convolucional).
-
+</p>
+<p align="justify">
 O projeto exige a manipulação de componentes específicos, mantendo a arquitetura-base (LeNet-like) como visto em aula, adaptando apenas in_channels se necessário.
-
+</p>
+<p align="justify">
 A tarefa principal é aplicar a predição da arquitetura da CNN sobre essas imagens,culminando na visualização gráfica de imagens e seus rótulos correspondentes.
-
+</p>
+<p align="justify">
 O estudo está inserido no contexto da exploração de CNNs com PyTorch e deve ser entregue até o dia 23 de novembro de 2025 (23h59).
 </p>
 
 ### ▶️ Instruções para executar o código
 <p align="justify">
+
 1. Clone o repositório utilizando o seguinte comando git na sua máquina.
 
 ``` git clone https://github.com/italomacielp/classification_with_pytorch```
@@ -36,9 +40,11 @@ O estudo está inserido no contexto da exploração de CNNs com PyTorch e deve s
 ### 🚧 Arquitetura
 <p align="justify">
 A classe Architecture serve como um contêiner completo para treinamento, validação, análise e visualização de modelos em PyTorch. 
-
+</p>
+<p align="justify">
 Ela recebe o modelo, a função de perda e o otimizador, configurando automaticamente o dispositivo (CPU/GPU) e gerenciando loaders de treino e validação. A classe cria funções internas de train step e validation step, que executam o forward, calculam a perda, fazem o backward e atualizam os pesos quando necessário, também controla todo o loop de treinamento, armazenando perdas, épocas e permitindo salvar e carregar checkpoints. 
-
+</p>
+<p align="justify">
 Além disso, oferece métodos para prever novos dados, contar parâmetros, visualizar filtros de camadas convolucionais, registrar hooks para capturar ativações internas e plotar curvas de perda. Por fim, inclui funções utilitárias como definição de semente, avaliação de acurácia por classe e aplicação de operações ao longo dos loaders.
 </p>
 
@@ -46,9 +52,11 @@ Além disso, oferece métodos para prever novos dados, contar parâmetros, visua
 <p align="justify">
 Nesse trabalho estamos analisando o conjunto de dados MNIST. Esse banco de imagens é um dos mais utilizados em estudos e experimentos envolvendo reconhecimento de padrões, 
 servindo como uma base ideal para observar o desempenho de modelos de visão computacional em tarefas simples de classificação.
-
+</p>
+<p align="justify">
 O MNIST reúne 60.000 imagens em tons de cinza cada uma com resolução 28×28 pixels, contendo registros de dígitos manuscritos.
-
+</p>
+<p align="justify">
 Esses exemplos estão organizados em 10 categorias, representando os números de 0 a 9. 
 Essa estrutura compacta e padronizada facilita a compreensão dos primeiros passos na construção e treinamento de modelos convolucionais.
 </p>
@@ -56,6 +64,8 @@ Essa estrutura compacta e padronizada facilita a compreensão dos primeiros pass
 ### 🚋 Estrutura da arquitetura base (Modelo LeNet-like)
 <p align="justify">
 A arquitetura segue uma estrutura padrão do modelo LeNet contendo blocos de *featurizer* e *classifier*, que correspondem captura de atributos e classificação dos dados. Os blocos contidos na camada de captura de atributos é constituida por:
+</p>
+
 - Entrada (Input): Recebe a imagem em sua dimensionalidade real e distribui os pixels para a rede neural, nesse caso foi utilizada a base de dados MNIST que possui imagens 28x28 e somente 1 canal. 
 - Convoluções (Conv2D): Tem como função extrair características importantes da imagem, a partir da aplicação de filtros (kernels) na imagem. Cada filtro pode detectar padrões, como:
 1. Bordas
@@ -67,6 +77,8 @@ A arquitetura segue uma estrutura padrão do modelo LeNet contendo blocos de *fe
 Os blocos contidos na camada de classificação é constituida por:
 - Camada densa (FC): Que realiza a combinação das características detectadas, e aprende as relações complexas entre as características.
 - Saída: Possui uma classe por neurônio de saída, convertendo os valores em probabilidades. Com o objetivo geral de decisão de qual classe a imagem pertence.
+
+<p align="justify">
 
 **Observação**: Foram adicionadas camadas de *dropout* antes da saída. Esse tipo de camada é útil reduzir o overfitting, desligando neurônios durante o treinamento realizando uma distribuição melhor dos dados.
 </p>
