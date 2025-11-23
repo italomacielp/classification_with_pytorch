@@ -3,7 +3,7 @@
 ## Projeto 2: Visualização das Camadas da CNN: Um Estudo de Caso
 <p align="center">
   <a href="#">
-    <img src="results/Modelo%20LeNet.png" alt="Logo" width="800" height="300">
+    <img src="results/modelo_lenet.png" alt="Logo" width="800" height="300">
   </a>
 </p>
 
@@ -87,7 +87,7 @@ Os blocos contidos na camada de classificação é constituida por:
 #### Curvas de treinamento e validação
 <p align="center">
   <a href="#">
-    <img src="results/Curva%20de%20treinamento%20e%20validação%201.png" alt="Logo" width="500" height="500">
+    <img src="results/curvas_treinamento_validacao_1.png" alt="Logo" width="500" height="500">
   </a>
 </p>
 
@@ -97,7 +97,7 @@ Com base na curva apresentada para o modelo sem ajustes e configurado para 20 é
 
 <p align="center">
   <a href="#">
-    <img src="results/Curva%20de%20treinamento%20e%20validação%202.png" alt="Logo" width="500" height="500">
+    <img src="results/curvas_treinamento_validacao_2.png" alt="Logo" width="500" height="500">
   </a>
 </p>
 
@@ -107,7 +107,7 @@ Com a aplicação da camada de dropout, observa-se uma melhora significativa na 
 
 <p align="center">
   <a href="#">
-    <img src="results/Curva%20de%20treinamento%20e%20validação%203.png" alt="Logo" width="500" height="500">
+    <img src="results/curvas_treinamento_validacao_3.png" alt="Logo" width="500" height="500">
   </a>
 </p>
 
@@ -118,7 +118,7 @@ Na última curva, aumentou-se a quantidade de épocas e reduziu-se a taxa de dro
 #### Matriz de confusão
 <p align="center">
   <a href="#">
-    <img src="results/matriz%20de%20confusão.png" alt="Logo" width="500" height="500">
+    <img src="results/matriz_confusao.png" alt="Logo" width="500" height="500">
   </a>
 </p>
 
