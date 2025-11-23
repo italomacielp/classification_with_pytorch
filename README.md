@@ -3,7 +3,7 @@
 ## Projeto 2: Visualização das Camadas da CNN: Um Estudo de Caso
 <p align="center">
   <a href="results/modelo_lenet.png">
-    <img src="results/modelo_lenet.png" alt="Logo" width="800" height="300">
+    <img src="results/modelo_lenet.png" alt="Modelo LeNet" width="800" height="300">
   </a>
 </p>
 
@@ -49,6 +49,12 @@ Além disso, oferece métodos para prever novos dados, contar parâmetros, visua
 </p>
 
 ### 📁  Base de Dados
+<p align="center">
+  <a href="results/base_dados.png">
+    <img src="results/base_dados.png" alt="Base de Dados" width="800" height="300">
+  </a>
+</p>
+
 <p align="justify">
 Nesse trabalho estamos analisando o conjunto de dados MNIST. Esse banco de imagens é um dos mais utilizados em estudos e experimentos envolvendo reconhecimento de padrões, 
 servindo como uma base ideal para observar o desempenho de modelos de visão computacional em tarefas simples de classificação.
@@ -86,8 +92,8 @@ Os blocos contidos na camada de classificação é constituida por:
 ### 📊 Explicação dos seus resultados e observações
 #### Curvas de treinamento e validação
 <p align="center">
-  <a href="#">
-    <img src="results/curvas_treinamento_validacao_1.png" alt="Logo" width="500" height="500">
+  <a href="results/curvas_treinamento_validacao_1.png">
+    <img src="results/curvas_treinamento_validacao_1.png" alt="Curvas de Treinamento e Validação 1" width="500" height="500">
   </a>
 </p>
 
@@ -96,8 +102,8 @@ Com base na curva apresentada para o modelo sem ajustes e configurado para 20 é
 </p>
 
 <p align="center">
-  <a href="#">
-    <img src="results/curvas_treinamento_validacao_2.png" alt="Logo" width="500" height="500">
+  <a href="results/curvas_treinamento_validacao_2.png">
+    <img src="results/curvas_treinamento_validacao_2.png" alt="Curvas de Treinamento e Validação 2" width="500" height="500">
   </a>
 </p>
 
@@ -106,8 +112,8 @@ Com a aplicação da camada de dropout, observa-se uma melhora significativa na 
 </p>
 
 <p align="center">
-  <a href="#">
-    <img src="results/curvas_treinamento_validacao_3.png" alt="Logo" width="500" height="500">
+  <a href="results/curvas_treinamento_validacao_3.png">
+    <img src="results/curvas_treinamento_validacao_3.png" alt="Curvas de Treinamento e Validação 3" width="500" height="500">
   </a>
 </p>
 
@@ -117,8 +123,8 @@ Na última curva, aumentou-se a quantidade de épocas e reduziu-se a taxa de dro
 
 #### Matriz de confusão
 <p align="center">
-  <a href="#">
-    <img src="results/matriz_confusao.png" alt="Logo" width="500" height="500">
+  <a href="results/matriz_confusao.png">
+    <img src="results/matriz_confusao.png" alt="Matriz de Confusão" width="500" height="500">
   </a>
 </p>
 
@@ -129,8 +135,8 @@ Pela matriz de confusão apresentada, observa-se que o modelo apresenta um desem
 #### Mapa de características
 
 <p align="center">
-  <a href="#">
-    <img src="results/features.png" alt="Logo" width="800" height="1000">
+  <a href="results/features.png">
+    <img src="results/features.png" alt="Mapa de Características" width="800" height="1000">
   </a>
 </p>
 
