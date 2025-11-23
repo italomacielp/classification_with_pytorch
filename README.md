@@ -117,12 +117,10 @@ Os blocos contidos na camada de classificação é constituida por:
 
 #### Matriz de confusão
 <p align="center">
-  <a href="#">
-  <figure style="text-align: center;">
+  <figure style="text-align: center; align: center">
     <img src="results/matriz%20de%20confusão.png" alt="Logo" width="500" height="500">
     <figcaption>Legenda centralizada da imagem</figcaption>
   </figure>
-  </a>
 </p>
 
 <p align="justify">
