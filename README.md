@@ -2,7 +2,7 @@
 
 ## Projeto 2: Visualização das Camadas da CNN: Um Estudo de Caso
 <p align="center">
-  <a href="#">
+  <a href="results/modelo_lenet.png">
     <img src="results/modelo_lenet.png" alt="Logo" width="800" height="300">
   </a>
 </p>
