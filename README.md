@@ -3,11 +3,9 @@
 ## Projeto 2: Visualização das Camadas da CNN: Um Estudo de Caso
 <p align="center">
   <a href="#">
-    <img src="results/Modelo%20LeNet.png" alt="Logo" width="300">
+    <img src="results/Modelo%20LeNet.png" alt="Logo" width="500" height="500">
   </a>
 </p>
-
-![LeNet](results/Modelo%20LeNet.png)
 
 ### 🏃 Componentes
 1. Paula Souza
