@@ -1,6 +1,12 @@
 # 💻 Projetos de Sistemas baseados em Aprendizado de Máquina 
 
 ## Projeto 2: Visualização das Camadas da CNN: Um Estudo de Caso
+<p align="center">
+  <a href="#">
+    <img src="results/Modelo%20LeNet.png.png" alt="Logo" width="300">
+  </a>
+</p>
+
 ![LeNet](results/Modelo%20LeNet.png)
 
 ### 🏃 Componentes
