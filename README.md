@@ -91,12 +91,19 @@ Os blocos contidos na camada de classificação é constituida por:
   </a>
 </p>
 
+<p align="justify">
+
+</p>
+
 <p align="center">
   <a href="#">
     <img src="results/Curva%20de%20treinamento%20e%20validação%202.png" alt="Logo" width="500" height="500">
   </a>
 </p>
 
+<p align="justify">
+
+</p>
 
 <p align="center">
   <a href="#">
@@ -104,11 +111,22 @@ Os blocos contidos na camada de classificação é constituida por:
   </a>
 </p>
 
+<p align="justify">
+
+</p>
+
 #### Matriz de confusão
 <p align="center">
   <a href="#">
+  <figure style="text-align: center;">
     <img src="results/matriz%20de%20confusão.png" alt="Logo" width="500" height="500">
+    <figcaption>Legenda centralizada da imagem</figcaption>
+  </figure>
   </a>
+</p>
+
+<p align="justify">
+A imagem 
 </p>
 
 #### Mapa de características
@@ -117,6 +135,10 @@ Os blocos contidos na camada de classificação é constituida por:
   <a href="#">
     <img src="results/features.png" alt="Logo" width="800" height="1000">
   </a>
+</p>
+
+<p align="justify">
+
 </p>
 
 ### 🎥 Link para o vídeo da sua apresentação
