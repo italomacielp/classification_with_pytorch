@@ -92,7 +92,7 @@ Os blocos contidos na camada de classificação é constituida por:
 </p>
 
 <p align="justify">
-
+Com base na curva apresentada para o modelo sem ajustes e configurado para 20 épocas de treinamento, observa-se um comportamento de overfitting. Isso indica que o modelo passa a memorizar os dados de treinamento, reduzindo sua capacidade de generalização e prejudicando o desempenho nas predições sobre novos dados.
 </p>
 
 <p align="center">
@@ -102,7 +102,7 @@ Os blocos contidos na camada de classificação é constituida por:
 </p>
 
 <p align="justify">
-
+Com a aplicação da camada de dropout, observa-se uma melhora significativa na aproximação entre as curvas de treinamento e validação, mantendo a mesma quantidade de épocas. Nesse caso, foi utilizado um dropout de 50%, o que significa que metade dos neurônios é desativada aleatoriamente durante o treinamento, reduzindo o risco de overfitting. Ainda assim, é possível aprimorar o modelo com ajustes adicionais.
 </p>
 
 <p align="center">
@@ -112,19 +112,18 @@ Os blocos contidos na camada de classificação é constituida por:
 </p>
 
 <p align="justify">
-
+Na última curva, aumentou-se a quantidade de épocas e reduziu-se a taxa de dropout utilizada na camada oculta. Mesmo com essas alterações, o modelo manteve um bom desempenho, mostrando curvas de treinamento e validação mais próximas. Com um número maior de épocas, a tendência de aproximação se torna mais evidente, indicando um comportamento mais estável e consistente do modelo.
 </p>
 
 #### Matriz de confusão
 <p align="center">
-  <figure style="text-align: center; align: center">
+  <a href="#">
     <img src="results/matriz%20de%20confusão.png" alt="Logo" width="500" height="500">
-    <figcaption>Legenda centralizada da imagem</figcaption>
-  </figure>
+  </a>
 </p>
 
 <p align="justify">
-A imagem 
+Pela matriz de confusão apresentada, observa-se que o modelo apresenta um desempenho considerado excelente. Isso ocorre porque a maior parte das previsões corretas se concentra na diagonal principal, indicando alta taxa de acerto ao identificar corretamente cada classe.
 </p>
 
 #### Mapa de características
@@ -136,7 +135,7 @@ A imagem
 </p>
 
 <p align="justify">
-
+O mapa de características apresentado permite visualizar e depurar as transformações que a imagem de entrada sofre nas camadas subsequentes, evidenciando quais padrões são extraídos e quais regiões se tornam mais relevantes para o modelo.
 </p>
 
 ### 🎥 Link para o vídeo da sua apresentação
