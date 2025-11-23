@@ -21,9 +21,12 @@ A tarefa principal é aplicar a predição da arquitetura da CNN sobre essas ima
 O estudo está inserido no contexto da exploração de CNNs com PyTorch e deve ser entregue até o dia 23 de novembro de 2025 (23h59).
 
 ### ▶️ Instruções para executar o código
-É necessário realizar o upload do notebook disponibilizado no repositório no ![colab](https://colab.research.google.com/). Acessando o menu, seguir o seguinte fluxo: Arquivo → Fazer Upload de Arquivo.
+1. Clone o repositório utilizando o seguinte comando git na sua máquina.
+``` git clone https://github.com/italomacielp/classification_with_pytorch```
 
-Após realizar o upload, pode executar cada célula ou clicar na opção *Executar tudo*.
+2. Realize o upload no colab notebook. Acessando o menu do colab e seguir o seguinte fluxo: <u>Arquivo → Fazer Upload de Arquivo.</u>
+
+3. Execute todas as células com a opção: *Executar tudo*.
 
 ### 🚧 Arquitetura
 A classe Architecture serve como um contêiner completo para treinamento, validação, análise e visualização de modelos em PyTorch. 
@@ -31,9 +34,6 @@ A classe Architecture serve como um contêiner completo para treinamento, valida
 Ela recebe o modelo, a função de perda e o otimizador, configurando automaticamente o dispositivo (CPU/GPU) e gerenciando loaders de treino e validação. A classe cria funções internas de train step e validation step, que executam o forward, calculam a perda, fazem o backward e atualizam os pesos quando necessário, também controla todo o loop de treinamento, armazenando perdas, épocas e permitindo salvar e carregar checkpoints. 
 
 Além disso, oferece métodos para prever novos dados, contar parâmetros, visualizar filtros de camadas convolucionais, registrar hooks para capturar ativações internas e plotar curvas de perda. Por fim, inclui funções utilitárias como definição de semente, avaliação de acurácia por classe e aplicação de operações ao longo dos loaders.
-
-### 🚋 Estrutura da arquitetura base (Modelo LeNet-like)
-A arquitetura segue uma estrutura padrão do modelo LeNet, contendo a parte
 
 ### 📁  Base de Dados
 
@@ -45,7 +45,57 @@ O MNIST reúne 60.000 imagens em tons de cinza cada uma com resolução 28×28 p
 Esses exemplos estão organizados em 10 categorias, representando os números de 0 a 9. 
 Essa estrutura compacta e padronizada facilita a compreensão dos primeiros passos na construção e treinamento de modelos convolucionais.
 
+### 🚋 Estrutura da arquitetura base (Modelo LeNet-like)
+A arquitetura segue uma estrutura padrão do modelo LeNet contendo blocos de *featurizer* e *classifier*, que correspondem captura de atributos e classificação dos dados. Os blocos contidos na camada de captura de atributos é constituida por:
+- Entrada (Input): Recebe a imagem em sua dimensionalidade real e distribui os pixels para a rede neural, nesse caso foi utilizada a base de dados MNIST que possui imagens 28x28 e somente 1 canal. 
+- Convoluções (Conv2D): Tem como função extrair características importantes da imagem, a partir da aplicação de filtros (kernels) na imagem. Cada filtro pode detectar padrões, como:
+1. Bordas
+2. Texturas
+3. Curvas
+4. Traços
+- Redução de dimensionalidade (Pooling): Reduz o mapa de características, com objetivo de resumir a imagem mantendo as informações mais importantes dela para o processo de classificação, servindo também para evitar *overfitting*.
+- Achatamento (Flatten): Achata as saídas 2D para um vetor 1D, importante para encarregar esses dados nas camadas profundas.
+Os blocos contidos na camada de classificação é constituida por:
+- Camada densa (FC): Que realiza a combinação das características detectadas, e aprende as relações complexas entre as características.
+- Saída: Possui uma classe por neurônio de saída, convertendo os valores em probabilidades. Com o objetivo geral de decisão de qual classe a imagem pertence.
+
+**Observação**: Foram adicionadas camadas de *dropout* antes da saída. Esse tipo de camada é útil reduzir o overfitting, desligando neurônios durante o treinamento realizando uma distribuição melhor dos dados.
+
 ### 📊 Explicação dos seus resultados e observações
+#### Curvas de treinamento e validação
+<p align="center">
+  <a href="#">
+    <img src="results/Curva%20de%20treinamento%20e%20validação%201.png" alt="Logo" width="500" height="500">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#">
+    <img src="results/Curva%20de%20treinamento%20e%20validação%202.png" alt="Logo" width="500" height="500">
+  </a>
+</p>
+
+
+<p align="center">
+  <a href="#">
+    <img src="results/Curva%20de%20treinamento%20e%20validação%203.png" alt="Logo" width="500" height="500">
+  </a>
+</p>
+
+#### Matriz de confusão
+<p align="center">
+  <a href="#">
+    <img src="results/matriz%20de%20confusão.png" alt="Logo" width="500" height="500">
+  </a>
+</p>
+
+#### Mapa de características
+
+<p align="center">
+  <a href="#">
+    <img src="results/features.png" alt="Logo" width="800" height="1000">
+  </a>
+</p>
 
 ### 🎥 Link para o vídeo da sua apresentação
 ![LINK DA APRESENTAÇÃO]()
